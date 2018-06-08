@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const ffmpeg = require("ffmpeg-binaries");
 const client = new Discord.Client();
 const config = require("./config.json");
 
