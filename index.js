@@ -41,7 +41,7 @@ client.on("message", async message => {
       if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => {
-          const dispatcher = connection.playStream('http://generationfm-rap.ice.infomaniak.ch/generationfm-rap-high.mp3');
+          const dispatcher = connection.playStream('http://urbanhitrapfr.ice.infomaniak.ch/urbanhitrapfr-128.mp3');
           message.channel.send(`La radio a été lancée par le propriétaire du serveur.`).then(message => message.delete(5000));
         })
         .catch(console.log);  
